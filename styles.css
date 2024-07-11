@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     border: 0;
-
 }
 
 *,
@@ -43,9 +42,6 @@ body {
     color: rgb(255, 255, 255);
     font-family: "Bebas Neue", sans-serif;
 }
-
-
-
 
 
 input::-ms-clear {
@@ -185,8 +181,9 @@ video {
     font-family: "Bebas Neue", sans-serif;
 }
 
+
 body {
-    background-image: url("./imgs/Frame 181.webp");
+    background-image: url("./imgs/Frame 182.webp");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -194,6 +191,98 @@ body {
     justify-content: space-between;
     align-items: start;
     padding: 0 68px;
+    position: relative;
+
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("./imgs/mob-wall.webp");
+        height: 100%;
+        padding: 20px 31px;
+        background-size: contain;
+    }
+
+    header .logo {
+        width: 154px;
+        height: 47.22px;
+        display: flex;
+        justify-content: start;
+    }
+
+    header .logo img {
+        width: 73%;
+    }
+
+    header {
+        flex-wrap: wrap-reverse;
+        padding-top: 0;
+    }
+    header .store-container {
+        padding-top: 3vh;
+    }
+    main {
+        width: 100%;
+    }
+
+    main section {
+        width: 100%;
+    }
+
+    section .deposit-title {
+        font-size: 43px;
+    }
+
+    section .deposit-title span {
+        font-size: 56px;
+    }
+
+    section .deposit-btn {
+        font-size: 42px;
+        width: 100%;
+    }
+
+    body footer {
+        padding-bottom: 62px;
+        width: 100%;
+    }
+
+    body .guy-and-money {
+        left: 50px;
+        width: 109%;
+    }
+
+    body footer {
+        background: rgb(0, 0, 0);
+        border-radius: 12px;
+        padding: 17px;
+    }
+
+    footer .payment-top {
+        font-size: 18px;
+    }
+
+    header .support {
+        font-size: 20px;
+    }
+
+    header .store-container {
+        width: 316px;
+        height: 44px;
+        column-gap: 11.34px;
+    }
+    footer .payment-bottom {
+        column-gap: 10px;
+    }
+    header .support {
+    text-align: center;
+    }
+}
+
+.guy-and-money {
+    position: absolute;
+    bottom: 0;
+    left: 780px;
 }
 
 header {
@@ -209,6 +298,11 @@ header {
     text-align: center;
     display: flex;
     justify-content: space-between;
+
+}
+
+.store-container img {
+    width: 100%;
 }
 
 .logo {
@@ -239,7 +333,7 @@ section {
     font-weight: 400;
     margin: 0;
     padding-bottom: 19px;
-    line-height: 100%;
+    line-height: 140%;
     text-transform: uppercase;
 }
 
@@ -259,6 +353,7 @@ section {
 footer {
     padding-bottom: 62px;
     width: 607px;
+    z-index: 100;
 }
 
 .payment-top {
@@ -268,8 +363,20 @@ footer {
 }
 
 .payment-bottom {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: center;
+}
+
+.payment-bottom div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.group3-container {
+    display: flex;
+    justify-content: end;
 }
 
 .payment-bottom hr {
